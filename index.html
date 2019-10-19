@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c5ecc5da6.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+        <header><i class="fas fa-arrow-left"></i>
+            <h4>Playlist - The Lumineers</h4>
+            <i class="fas fa-ellipsis-v"></i> 
+          </header>
+<main>
+<section class="Playlist">
+    <section class="song">
+        <section class="img">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="65vw" height="65vw">
+        </section>
+        <section class="songname">
+                <h4>The Lumineers</h4><strong><p>Charlie Boy</p></strong>
+        </section>
+            <section class="ikoner">
+                    <span id="clickablePlay"onclick=charlieBoy()><i class="fas fa-play-circle"></i></span>
+                    </section>
+            </section> 
+            <section class="song">
+                <section class="img">
+                   <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="65vw" height="65vw">
+                </section>
+                <section class="songname">
+            <h4>The Lumineers</h4><strong><p>Submarines</p></strong>
+        </section>
+        <section class="ikoner">
+                        <span id="clickablePlay"onclick=subMarines()><i class="fas fa-play-circle"></i></span>
+            </section>
+            </section>
+            <section class="song">
+                <section class="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="65vw" height="65vw">
+                </section>
+            <section class="songname">
+            <h4>The Lumineers</h4><strong><p>Stubborn Love</p></strong>
+            </section>
+            <section class="ikoner">
+                        <span id="clickablePlay"onclick=stubbornLove()><i class="fas fa-play-circle"></i></span>
+            </section>
+            </section>
+            <section class="song">
+                    <section class="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="65vw" height="65vw">
+                         </section>
+                         <section class="songname">
+            <h4>The Lumineers</h4><strong><p>Ho Hey</p></strong>
+            </section>
+            <section class="ikoner">
+                        <span id="clickablePlay"onclick=hoHey()><i class="fas fa-play-circle"></i></span>
+            </section>
+            </section>
+            <section class="song">
+                <section class="img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="65vw" height="65vw">
+                </section>
+                <section class="songname">
+                        <h4>The Lumineers</h4><strong><p>Big Parade</p></strong>
+                </section>
+                <section class="ikoner">
+                                <span id="clickablePlay"onclick=bigParade()><i class="fas fa-play-circle"></i></span>
+                </section>
+                </section>
+            
+            <section class="song">
+                <section class="img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg"width="65vw" height="65vw">
+                </section>
+                <section class="songname">
+                        <h4>The Lumineers</h4>
+                        <strong><p>Slow It Down</p></strong>
+                        </section>
+                        <section class="ikoner">
+                                        <span id="clickablePlay"onclick=slowItDown()><i class="fas fa-play-circle"></i></span>
+                        </section>
+                        </section>
+            <section class="song">
+                <section class="img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="65vw" height="65vw">
+                </section>
+                <section class="songname">
+                        <h4>The Lumineers</h4><strong><p>Morning Song</p></strong>
+                </section>
+                <section class="ikoner">
+                                <span id="clickablePlay"onclick=morningSong()><i class="fas fa-play-circle"></i></span>
+                </section>
+                </section>
+                </section>
+            <section class="nowPlaying">
+                <section class = "currentImg">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/616wDxRkPoL._SL1425_.jpg" width="300vw" height="300vh">
+                </section>
+                    <section class="currentSong">
+                            <section class="currentIcons">
+                                    <i class="fas fa-plus-circle"></i>
+                            </section> 
+                            <section class="currentSongName">
+                                    <h3>The Lumineers</h3><strong><p id="songname">Charlie Boy</p></strong>
+                                </section>
+                    <section class="currentIcons">
+                            <i class="fas fa-heart"></i>
+                    </section>        
+                </section>
+            
+                <section class="songTimer"> 
+                        <strong><p>00:00-----------------------------------00:30</p></strong>
+                </section>
+                    <section class="nowPlayingIcons">
+                            <span id="retweet"><i class="fas fa-retweet"></i></span>
+                            <span id="backward"onclick=previousSong()><i class="fas fa-backward"></i></span>
+                            <span id="Play"onclick=playorPauseSong()><i class="fas fa-play-circle"></i></span>
+                            <span id="forward"onclick=nextSong()><i class="fas fa-forward"></i></span>
+                            <span id="random"><i class="fas fa-random"></i></span>
+                    </section>
+            </section>
+            
+</main>    
+</body>
+</html>

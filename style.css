@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;;
+}
+body{
+    background-image: url(https://s7d5.scene7.com/is/image/DecorOnline/roller-shades_303GY024);
+    color: wheat;
+}
+header{ 
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid wheat;
+   align-items: center;
+   height: 5vh; /* gör headern mindre i höjd */
+}
+main{
+    display: flex; /* gör att man kan använda flexbox */
+    }
+.nowPlaying{ 
+    padding-top: 5%;
+    display: flex;  
+    flex-direction: column; /* lägger sektionerna i nowPlaying i kolumner */
+    flex-grow: 2; /* ökar storlek på sektionen*/
+    text-align: center; /* centrerar all text */
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+.Playlist{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; /* dubblar storleken på sektionen */
+    border-right: 1px solid white;
+}
+.songname{
+    text-align: center; /* centrerar texten i låtlistan */
+}
+.song{
+    display:flex;
+    flex-direction: row; /* lägger innehållet i låtarna i rader */
+    justify-content: space-between; /* fördelar utrymmet jämnt mellan innehållet */
+    align-items: center; /* centrerar innehållet */
+    border-bottom: 0.5px solid white;
+    }
+.ikoner{
+    font-size: 150%; /* ökar storleken på symbolerna*/
+    margin-right: 5%;
+}
+.currentSong{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around; /* ger innehållet i currentSong avstånd mellan varandra */
+    align-items: center;
+}
+.nowPlayingIcons{
+    font-size: 200%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.currentImg{
+    flex-grow: 1;
+}
+.songTimer{
+    flex-grow: 1;
+}
+.song:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.nowPlayingIcons i:hover{
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.currentSong i:hover{
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.fa-play-circle{
+    cursor: pointer;
+}
